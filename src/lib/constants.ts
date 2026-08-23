@@ -93,9 +93,3 @@ export const HOSPITAL_INFO = {
   },
 ];
 
-
-  // export const STATS = [
-  //   { label: "Specialists", value: "20+" },
-  //   { label: "Departments", value: "10+" },
-  //   { label: "Patient Satisfaction", value: "100%" },
-  // ];

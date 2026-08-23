@@ -3,8 +3,8 @@ export const HOSPITAL_INFO = {
     tagline: "Healing Hands, Caring Hearts.",
     phone: "+91 7863050470",
     emergencyPhone: "+91 7863050470",
-    email: "care@unityonehealth.com",
-    address: "Unityone Health Centre, Barkoshiya Road, Nadiad, Gujarat 387001",
+    email: "unityonehealth@gmail.com",
+    address: "Unityone Health Centre, Opp Sahar Party Plot, Marida Bhagol, Nadiad, Gujarat 387001",
     openingHours: "Open from 8:00 AM - 8:00 PM",
   };
   

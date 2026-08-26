@@ -1,5 +1,18 @@
 import { HOSPITAL_INFO } from "./constants";
 
+
+export function getWebsiteSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://www.unityonehealthcentre.com/#website",
+    name: "Unityone Health Centre",
+    alternateName: ["Unityone", "Unityone Polyclinic"],
+    url: "https://www.unityonehealthcentre.com",
+  };
+}
+
+
 export function getHospitalSchema() {
   return {
     "@context": "https://schema.org",
@@ -15,7 +28,7 @@ export function getHospitalSchema() {
     email: HOSPITAL_INFO.email,
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Unityone Health Centre, Opp City Center, Nadiad Bypass Rd,Nadiad",
+      streetAddress: "Unityone Health Centre, Opp Sahar Party Plot, Marida Bhagol,Nadiad",
       addressLocality: "Nadiad",
       addressRegion: "Gujarat",
       postalCode: "387001",

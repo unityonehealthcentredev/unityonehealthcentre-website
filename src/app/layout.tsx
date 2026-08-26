@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { HOSPITAL_INFO } from "@/lib/constants";
 import { JsonLd } from "@/components/seo/JsonLd";
-import { getHospitalSchema } from "@/lib/jsonLd";
+import { getWebsiteSchema,getHospitalSchema } from "@/lib/jsonLd";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -85,6 +85,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable}>
       <head>
+        <JsonLd data={getWebsiteSchema()} />
         <JsonLd data={getHospitalSchema()} />
       </head>
       <body className="antialiased">{children}</body>

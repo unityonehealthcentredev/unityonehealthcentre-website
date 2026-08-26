@@ -8,6 +8,8 @@ import { FAQSection } from "@/components/faq/FAQSection";
 import { LocationSection } from "@/components/sections/LocationSection";
 import { AppointmentForm } from "@/components/appointment/AppointmentForm";
 import { Footer } from "@/components/layout/Footer";
+// import { HomeMessageBox } from "@/components/sections/HomeMessageBox";
+import { PharmacyToast } from "@/components/ui/PharmacyToast";
 import { DEPARTMENTS, HOSPITAL_INFO } from "@/lib/constants";
 import { Phone, ArrowRight, HeartPulse, Brain, Bone, Baby, Stethoscope, Siren } from "lucide-react";
 import Link from "next/link";
@@ -20,7 +22,7 @@ export default function Home() {
   return (
     <div className="min-h-screen flex flex-col bg-white">
       <Header />
-      
+      <PharmacyToast></PharmacyToast>
       <main className="flex-grow">
         <Hero />
         {/* <StatsSection /> */}

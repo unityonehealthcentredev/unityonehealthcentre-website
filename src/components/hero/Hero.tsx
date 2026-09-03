@@ -57,13 +57,13 @@ export function Hero() {
 <Button
   variant="outline"
   onClick={() => {
-    document.getElementById("services")?.scrollIntoView({
+    document.getElementById("departments")?.scrollIntoView({
       behavior: "smooth",
     });
   }}
   className="border-[#E2E8F0] text-[#0B1F33] hover:bg-slate-50 font-semibold text-base px-8 py-6 rounded-xl"
 >
-  Explore Our Services
+  Explore Our Departments
 </Button>
               
             </div>
@@ -96,10 +96,10 @@ export function Hero() {
             {/* Background Accent Graphics */}
             <div className="absolute -inset-4 bg-gradient-to-tr from-[#05EDD6]/20 to-[#00BFAF]/10 rounded-[2rem] blur-xl -z-10" />
 
-            <div className="relative rounded-[1.75rem] overflow-hidden border border-slate-100 shadow-xl bg-white">
+            <div className="relative rounded-[1.75rem] overflow-hidden border border-slate-120 bg-white">
               <Image
-                src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=1000"
-                alt="UnityOne Health Centre modern interior with healthcare professionals"
+                src="/unityonegmb.png"
+                alt="Unityone Health Centre modern interior with healthcare professionals"
                 width={800}
                 height={900}
                 className="w-full h-[480px] object-cover"
@@ -108,7 +108,7 @@ export function Hero() {
 
               {/* Floating Emergency Overlay Card */}
               <div className="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-md p-4 rounded-2xl border border-white/40 shadow-lg flex items-center gap-4">
-                <div className="w-12 h-12 rounded-xl bg-red-50 border border-red-100 flex items-center justify-center text-[#DC2626] shrink-0">
+                <div className="w-12 h-12 rounded-xl bg-red-50 border border-red-100 flex items-center justify-center text-[#008F86] shrink-0">
                   <Clock className="w-6 h-6" />
                 </div>
                 <div>

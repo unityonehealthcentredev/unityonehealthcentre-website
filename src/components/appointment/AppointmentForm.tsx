@@ -5,7 +5,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { DEPARTMENTS } from "@/lib/constants";
-import { MOCK_DOCTORS } from "@/components/doctors/DoctorsSection";
+// import { MOCK_DOCTORS } from "@/components/doctors/DoctorsSection";
+import { MOCK_DOCTORS } from "@/data/doctors";
 import {Calendar,Clock,User,Phone,Mail,MessageCircle,Stethoscope} from "lucide-react";
 
 export function AppointmentForm() {

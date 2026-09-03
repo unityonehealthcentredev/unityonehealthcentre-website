@@ -58,7 +58,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-[#05EDD6] shrink-0" />
-                <span>{HOSPITAL_INFO.email}</span>
+                <span><a href="mailto:info@unityonehealthcentre.com">{HOSPITAL_INFO.email}</a></span>
               </li>
             </ul>
           </div>
@@ -71,7 +71,7 @@ export function Footer() {
 
         <p className="text-sm leading-6 text-slate-300">
           Conveniently get your prescribed medicines and healthcare essentials
-          from Unityrx Pharmacy.
+          from UnityRx Pharmacy.
         </p>
 
         <a

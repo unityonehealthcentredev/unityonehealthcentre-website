@@ -1,5 +1,5 @@
 import { MetadataRoute } from "next";
-import { MOCK_DOCTORS } from "@/components/doctors/DoctorsSection";
+import { MOCK_DOCTORS } from "@/data/doctors";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.unityonehealthcentre.com";

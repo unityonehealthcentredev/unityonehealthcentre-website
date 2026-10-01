@@ -62,7 +62,7 @@ export default function AboutPage() {
               <div className="lg:col-span-6 relative">
                 <div className="relative h-[420px] rounded-3xl overflow-hidden border border-slate-200 shadow-md">
                   <Image
-                    src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=1000"
+                    src="/unityonehero.png"
                     alt="UnityOne Health Centre facility"
                     fill
                     className="object-cover"

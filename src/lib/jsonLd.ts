@@ -22,7 +22,7 @@ export function getHospitalSchema() {
     alternateName: "UnityOne Polyclinic",
     url: "https://www.unityonehealthcentre.com",
     logo: "https://www.unityonehealthcentre.com/logo512.png",
-    image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d", //change this image 
+    image: "https://www.unityonehealthcentre.com/unityonegmb.png", //change this image 
     telephone: HOSPITAL_INFO.phone,
     emergencyTelephone: HOSPITAL_INFO.emergencyPhone,
     email: HOSPITAL_INFO.email,

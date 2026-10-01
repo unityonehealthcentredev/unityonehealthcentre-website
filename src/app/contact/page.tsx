@@ -317,7 +317,7 @@ ${message}`;
                           id="contact-name"
                           name="name"
                           required
-                          placeholder="Jane Doe"
+                          placeholder="Raj Chakravarthy"
                           className="bg-white rounded-xl"
                         />
                       </div>
@@ -334,7 +334,7 @@ ${message}`;
                           name="email"
                           type="email"
                           required
-                          placeholder="jane@example.com"
+                          placeholder="raj@example.com"
                           className="bg-white rounded-xl"
                         />
                       </div>

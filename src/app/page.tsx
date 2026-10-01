@@ -10,11 +10,11 @@ import { AppointmentForm } from "@/components/appointment/AppointmentForm";
 import { Footer } from "@/components/layout/Footer";
 import { PharmacyToast } from "@/components/ui/PharmacyToast";
 import { DEPARTMENTS, HOSPITAL_INFO } from "@/lib/constants";
-import { Phone, ArrowRight, HeartPulse, Brain, Bone, Baby, Stethoscope, Siren } from "lucide-react";
+import { Phone, ArrowRight, HeartPulse, Brain, Bone, Baby, Stethoscope, Siren,Ear,UserStar,ShieldCog} from "lucide-react";
 import Link from "next/link";
 
 const iconMap: Record<string, React.ElementType> = {
-  HeartPulse, Brain, Bone, Baby, Stethoscope, Siren
+  HeartPulse, Brain, Bone, Baby, Stethoscope, Siren ,Ear,UserStar,ShieldCog
 };
 
 export default function Home() {
@@ -193,7 +193,53 @@ export default function Home() {
               </h2>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+<div className="flex flex-wrap justify-center gap-6">
+  {DEPARTMENTS.map((dept) => {
+    const IconComponent = iconMap[dept.icon] || Stethoscope;
+
+    return (
+      <div
+        key={dept.slug}
+        className="
+          w-full
+          md:w-[calc(50%-12px)]
+          lg:w-[calc(33.333%-16px)]
+          bg-[#0B1F33]
+          p-6
+          rounded-2xl
+          border border-slate-800
+          hover:border-[#00BFAF]
+          transition-all
+          hover:shadow-md
+          group
+        "
+      >
+        <div className="w-12 h-12 rounded-xl bg-[#00BFAF]/10 text-[#05EDD6] flex items-center justify-center mb-4 group-hover:bg-[#05EDD6] group-hover:text-[#0B1F33] transition-colors">
+          <IconComponent className="w-6 h-6" />
+        </div>
+
+        <h3 className="text-xl font-bold !text-white mb-2">
+          {dept.name}
+        </h3>
+
+        <p className="text-sm text-slate-400 mb-4">
+          {dept.description}
+        </p>
+
+        <Link
+          href="#appointment"
+          className="text-xs font-bold text-[#008F86] inline-flex items-center gap-1 group-hover:gap-2 transition-all"
+        >
+          <span>Book Appointment</span>
+          <ArrowRight className="w-3.5 h-3.5" />
+        </Link>
+      </div>
+    );
+  })}
+</div>
+
+            {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {DEPARTMENTS.map((dept) => {
                 const IconComponent = iconMap[dept.icon] || Stethoscope;
                 return (
@@ -216,46 +262,10 @@ export default function Home() {
                   </div>
                 );
               })}
-            </div>
+            </div> */}
           </div>
         </section>
-        {/* <section id="departments" className="py-20 bg-[#F8FAFC]">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center max-w-xl mx-auto mb-16">
-              <span className="text-xs font-bold uppercase tracking-wider text-[#008F86]">
-                OUR DEPARTMENTS
-              </span>
-              <h2 className="text-3xl font-bold text-[#0B1F33] mt-2">
-                Specialized Care Under One Roof
-              </h2>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {DEPARTMENTS.map((dept) => {
-                const IconComponent = iconMap[dept.icon] || Stethoscope;
-                return (
-                  <div
-                    key={dept.slug}
-                    className="bg-white p-6 rounded-2xl border border-slate-200 hover:border-[#00BFAF] transition-all hover:shadow-md group"
-                  >
-                    <div className="w-12 h-12 rounded-xl bg-[#ECFFFC] text-[#008F86] flex items-center justify-center mb-4 group-hover:bg-[#05EDD6] group-hover:text-[#0B1F33] transition-colors">
-                      <IconComponent className="w-6 h-6" />
-                    </div>
-                    <h3 className="text-xl font-bold text-[#0B1F33] mb-2">{dept.name}</h3>
-                    <p className="text-sm text-slate-600 mb-4">{dept.description}</p>
-                    <Link
-                      href="#appointment"
-                      className="text-xs font-bold text-[#008F86] inline-flex items-center gap-1 group-hover:gap-2 transition-all"
-                    >
-                      <span>Explore Department</span>
-                      <ArrowRight className="w-3.5 h-3.5" />
-                    </Link>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </section> */}
+       
 
         <DoctorsSection />
         <WhyChooseUs />

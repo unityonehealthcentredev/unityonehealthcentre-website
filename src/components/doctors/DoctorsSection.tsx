@@ -79,13 +79,97 @@ export const MOCK_DOCTORS = [
     image: "/dryash.jpeg",
     timings: [
       {
-        days: ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        days: ["Tuesday","Saturday"],
         time: "03:00 PM – 04:00 PM",
       },
     ],
     description:
       "Senior ENT Consultant with an MS in ENT, specializing in comprehensive ear, nose, and throat care with a focus on accurate diagnosis and patient-centered treatment.",
-  }
+  },
+  {
+    slug: "dr-bhumika-patel",
+    name: "Dr. Bhumika Patel",
+    qualification: "M.D. (Psychiatry)",
+    specialty: "Psychiatrist",
+    experience: "7+ Year Experience",
+    image: "/drbhoomika.jpeg",
+    timings: [
+      {
+        days: ["Thursday"],
+        time: "03:00 PM – 04:00 PM",
+      },
+    ],
+    description:
+    "Psychiatrist specializing in the assessment and treatment of mental health conditions, with a patient-centered approach focused on emotional well-being, behavioral health, and personalized care.",
+  },
+  {
+    slug: "dr-twinkle-sarvaiya",
+    name: "Dr. Twinkle Sarvaiya",
+    qualification: "MD (Dermatology)",
+    specialty: "Dermatologist — Skincare",
+    experience: "1+ Year Experience",
+    image: "/drtwinkles.jpeg",
+    timings: [
+      {
+        days: ["Saturday"],
+        time: "01:00 PM – 02:00 PM",
+      },
+    ],
+    description:
+      "Senior ENT Consultant with an MS in ENT, specializing in comprehensive ear, nose, and throat care with a focus on accurate diagnosis and patient-centered treatment.",
+  },
+  {
+    slug: "dr-shreyansh-patel",
+    name: "Dr. Shreyansh Patel",
+    qualification: "MD,DM (Medical Oncology)",
+    specialty: "Onco Physician - Cancer Treatment",
+    experience: "1+ Year Experience",
+    image: "/drshreyansh.jpeg",
+    timings: [
+      {
+        days: ["Saturday"],
+        time: "02:00 PM – 04:00 PM",
+      },
+    ],
+    description:
+    "Medical Oncologist specializing in cancer care, including the evaluation and management of cancer patients with a focus on personalized treatment planning and supportive care.",
+  },
+  {
+    slug: "dr-mehul-shah",
+    name: "Dr. Mehul Shah",
+    qualification: "MS (Ophthalmology)",
+    specialty: "Ophthalmologist - Eye Treatment",
+    experience: "1+ Year Experience",
+    image: "/drmehul.jpeg",
+    timings: [
+      {
+        days: ["Wednesday"],
+        time: "03:00 PM – 04:00 PM",
+      },
+    ],
+    description:
+    "Ophthalmologist specializing in comprehensive eye care, including the diagnosis and treatment of common eye conditions, with a focus on maintaining and improving patients' vision and eye health.",
+  },
+  {
+    slug: "dr-saalim-kadiyawala",
+    name: "Dr. Saalim Kadiyawala",
+    qualification: "MD (Pediatric)",
+    specialty: "Pediatrician - Child Care",
+    experience: "3+ Year Experience",
+    image: "/drsaalim.jpg",
+    timings: [
+      {
+        days: ["Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"],
+        time: "09:30 AM – 11:00 AM",
+      },
+    ],
+    description:
+"Pediatrician specializing in comprehensive child healthcare, including the diagnosis and treatment of common childhood illnesses, with a focus on supporting healthy growth, development, and overall well-being.",  }
 ];
 
 export function DoctorsSection() {
@@ -144,8 +228,11 @@ export function DoctorsSection() {
                           src={doc.image}
                           alt={doc.name}
                           fill
-                          className="object-cover object-[center_20%] group-hover:scale-105 transition-transform duration-300"
-                        />
+                          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+
+                          // className="object-cover object-[center_20%] group-hover:scale-105 transition-transform duration-300"
+                          className={`${doc.name==="Dr. Mehul Shah" ? "object-contain" : "object-cover object-[center_20%]"}`}
+                       />
                       </div>
 
                       {/* Doctor Info */}

@@ -22,7 +22,7 @@ export function Hero() {
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#ECFFFC] border border-[#CCFBF1]">
               <span className="w-2 h-2 rounded-full bg-[#05EDD6] animate-pulse" />
               <span className="text-xs font-bold tracking-wide uppercase text-[#008F86]">
-                NEW HOSPITAL • NOW OPEN
+              An Multispeciality Polyclinic
               </span>
             </div>
 
@@ -98,7 +98,7 @@ export function Hero() {
 
             <div className="relative rounded-[1.75rem] overflow-hidden border border-slate-120 bg-white">
               <Image
-                src="/unityonegmb.png"
+                src="/unityonehero.png"
                 alt="Unityone Health Centre modern interior with healthcare professionals"
                 width={800}
                 height={900}

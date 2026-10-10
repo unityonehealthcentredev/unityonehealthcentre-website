@@ -70,20 +70,6 @@ export function TestimonialsSection() {
 
         {/* Google Rating Summary */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
-          {/* <div className="flex items-center gap-3">
-            <span className="text-3xl font-bold text-[#0B1F33]">
-              
-            </span>
-
-            <div>
-              <GoogleStars rating={5} />
-
-              <p className="text-xs text-slate-500 mt-1">
-                Based on 250+ Google Reviews
-              </p>
-            </div>
-          </div> */}
-
           {/* Google Logo */}
           <div className="hidden sm:block w-px h-10 bg-slate-200" />
 
@@ -166,7 +152,7 @@ export function TestimonialsSection() {
             href="https://share.google/YooXckqVmfx81efmG"
             className="inline-flex items-center justify-center px-6 py-2.5 rounded-full border border-slate-300 text-sm font-semibold text-[#1A73E8] hover:bg-[#F8FAFF] transition-colors"
           >
-            View all Google reviews
+            View all reviews/Give Review
           </a>
         </div>
       </div>

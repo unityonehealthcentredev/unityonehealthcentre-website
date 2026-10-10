@@ -3,26 +3,26 @@ import Image from "next/image";
 const FACILITIES = [
   {
     name: "Defibrillator",
-    image:"/defibrillator.jfif",
+    image:"/defibrillator.jpg",
       // "https://images.unsplash.com/photo-1516069677018-378515003435?auto=format&fit=crop&q=80&w=800",
   },
   {
     name: "ECG",
-    image:"/ecgmachine.jfif",
+    image:"/ecgmachine.jpg",
     // image:"https://unisonbiomed.com/wp-content/uploads/2024/01/Digital-Six-channel-ECG-machine-ECG-1206A-Plus.jpg",
   },
   {
     name: "BiPAP Machine",
-    image:"/bipapmachine.jfif",
+    image:"/bipapmachine.jpg",
       // "https://thumbs.dreamstime.com/b/caucasian-woman-using-cough-assist-ventilator-mask-deep-breaths-respiratory-condition-home-due-to-195704805.jpg",
   },
   {
     name: "Multipara Monitor",
-    image:"/multiparamonitor.jfif",
+    image:"/multiparamonitor.jpg",
       // "https://thumbs.dreamstime.com/b/close-up-multiparameter-patient-monitor-161877300.jpg?w=992",  
   },
   {name: "Syringe Pump",
-    image:"/syringepump.jfif",
+    image:"/syringepump.jpg",
     // "https://thumbs.dreamstime.com/b/hospital-syringe-pump-white-background-digital-used-hospitals-iv-infusion-isolated-378129721.jpg?w=768s",
   },
   {
